@@ -11,7 +11,7 @@
         timeBeforeScanTest: 200, // wait for the next character for upto 200ms
         avgTimeByChar: 100, // it's not a barcode if a character takes longer than 100ms
         onComplete: function(barcode, qty){
-            scannerInput.selet();
+            scannerInput.select();
             scannerInput.val(barcode);
             (barcode && fetchUserinfo(barcode));
         } // main callback function	
