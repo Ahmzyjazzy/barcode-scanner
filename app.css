@@ -54,6 +54,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    background-color: beige;
+    background-size: cover;
 }
 
 .scanner--container form {
@@ -146,6 +148,10 @@ button:hover {
     align-self: center;
     justify-self: center;
     text-align: center;
+    width: 288px;
+    height: 192px;
+    border: 2px dashed var(--green-color);
+    text-transform: uppercase;
 }
 
 .audience-type {
@@ -156,9 +162,6 @@ button:hover {
     font-weight: bold;
 }
 
-span.event-year {
-
-}
 
 .event-tags span {
     font-weight: bolder;
@@ -172,4 +175,41 @@ span.fname {
 span.sname {
     font-weight: 600;
     font-size: 16px;
+}
+
+@media print {
+
+    .audience-detail {
+        align-self: center !important;
+        justify-self: center !important;
+        text-align: center !important;
+        width: 288px;
+        height: 192px;
+        text-transform: uppercase !important;
+        color: #000;
+        border: none;
+    }
+
+    .audience-type {
+        /* align-self: end; */
+        justify-self: flex-start;
+        margin: 7px 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .event-tags span {
+        font-weight: bolder;
+    }
+
+    span.fname {
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    span.sname {
+        font-weight: 600;
+        font-size: 16px;
+    }
 }
