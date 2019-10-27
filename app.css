@@ -1,0 +1,175 @@
+
+:root {
+    --green-color: #049d11;
+    --dark-color: #151515;
+}
+
+body {
+    margin: 0 0;
+    padding: 0 0;
+    height: 100vh;  
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app--header {
+    min-height: 100px;
+    width: 100%;
+    background: var(--dark-color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app--header ul{
+    width: 100px;
+}
+
+.app--header ul li {
+    list-style-type: none;
+    align-self: center;
+}
+
+.app--header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.scanner--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(barcode-scanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.scanner--container form {
+    min-width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.scanner--container input {
+    padding: 10px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+}
+
+.scanner--result {
+    background: #eee;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 5fr 50px;
+}
+
+.data-result-cont {
+    background: #ffffff;
+}
+
+.data-action {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 15px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+    border: 2px solid #ccc;
+}
+
+/* Result cardr */
+
+.data-result-cont {
+    display: grid;
+    grid-template-rows: 9fr 2fr 1fr;
+    border: 1px solid var(--green-color);
+}
+
+.event-sponsor {
+    background: var(--green-color);
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://agrisuppliesng.com/wp-content/uploads/2018/09/aslname3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+.event-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-tags span {
+    padding: 5px;
+}
+
+.event-body {
+    display: grid;
+}
+
+.event-title {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.audience-detail {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.audience-type {
+    align-self: end;
+    justify-self: flex-start;
+    margin: 7px 15px;
+    color: #049d11;
+    font-weight: bold;
+}
+
+span.event-year {
+
+}
+
+.event-tags span {
+    font-weight: bolder;
+}
+
+span.fname {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+span.sname {
+    font-weight: 600;
+    font-size: 16px;
+}
